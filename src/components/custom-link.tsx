@@ -19,7 +19,7 @@ export const CustomLink = ({ href, isSidebar = false, className, children }: Cus
   const isActiveLink = pathname.startsWith(href)
   const router = useRouter()
 
-  const handleClick = async (e: any) => {
+  const handleClick = async (e: { preventDefault: () => void }) => {
     if (isQuizActive) {
       e.preventDefault()
       setIsOpen(true)
