@@ -6,13 +6,13 @@ import { CustomLink } from '~/components/custom-link'
 import { cn } from '~/lib/utils'
 
 const baseBoxStyle =
-  'p-5 border border-slate-800 rounded-lg bg-gradient-to-bl from-gray-900 to-slate-950'
+  'p-5 border border-slate-800 rounded-lg bg-gradient-to-bl from-gray-900 to-slate-950 hover:from-slate-950 hover:to-gray-900 transition-all'
 
 export function HomeContent() {
   return (
     <div className="home-content px-4">
       <h1 className="mb-8 text-center text-5xl font-extrabold tracking-tight sm:text-[5rem]">
-        Solve <span className="text-[hsl(280,100%,70%)]">Quizzes,</span> Excel
+        <span className="text-[hsl(280,100%,70%)]">Quiz</span> Your Way Up
       </h1>
 
       <p className="mb-8 text-center text-gray-400">{config.seo.alternativeDescription}</p>
