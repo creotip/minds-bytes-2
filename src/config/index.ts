@@ -10,17 +10,13 @@ interface SEOConfig {
   description: string
   alternativeDescription: string
   url: string
-  quizPages: {
-    [key: string]: QuizPage
-  }
+  quizPages: Record<string, QuizPage>
 }
 
 interface AppConfig {
   seo: SEOConfig
   db: {
-    quizzes: {
-      [key: string]: string
-    }
+    quizzes: Record<string, string>
   }
   quizList: Array<{
     title: string
