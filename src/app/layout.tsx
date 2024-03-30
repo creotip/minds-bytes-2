@@ -4,6 +4,7 @@ import { TRPCReactProvider } from '~/trpc/react'
 import { type ReactNode } from 'react'
 import { Header } from '~/components/layout/header'
 import { Content } from '~/components/layout/content'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </footer>
           </div>
         </TRPCReactProvider>
+        <Analytics />
       </body>
     </html>
   )
