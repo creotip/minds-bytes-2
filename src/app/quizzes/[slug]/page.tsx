@@ -10,7 +10,7 @@ type Props = {
 
 export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const slug = params.slug || ''
-  const title = config.seo.quizPages[slug]?.title || 'Not Found'
+  const title = config.seo.quizPages[slug]?.title
   const description = config.seo.quizPages[slug]?.description
   return {
     title: `${title} | MindsBytes`,
